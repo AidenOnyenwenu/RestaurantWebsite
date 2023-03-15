@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Reserveer een tafel</title>
+  <link rel="icon" type="image/png" href="img/thuisbezorgd2.png" />
+  <link rel="stylesheet" href="css/reserveren.css">
+  <script type="text/javascript" src="scripts/datepicker.js"></script>
+  <script type="text/javascript" src="scripts/reserveren.js"></script>
+  <!-- Importeren van de Google font -->
+  <link href='https://fonts.googleapis.com/css?family=Luckiest Guy' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Jura' rel='stylesheet'>
+  <script src="https://kit.fontawesome.com/80bfb3b6e2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <noscript id="noscript">Your browser does not support JavaScript! Please update your site settings!</noscript>
+  <article>
+    <div id="container">
+      <div class="hero-image">
+        <nav>
+          <ul>
+            <li><a href="index.html"> <i class="fa-solid fa-house"></i> Huis</a>
+            </li>
+            <li><a href="index.html/#menukaart"> <i class="fa-solid fa-utensils"></i>
+                Menukaart</a></li>
+            <li id="btnBoekTafel"><a href="bestellen.html"> <i class="fa-solid fa-cart-shopping"></i> Eten Bestellen</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="row">
+          <div id="reserveren-div">
+            <div class="column">
+              <br>
+              <br>
+              <label class="hero-titel">Reserveer een plekje</label>
+              <br>
+              <br>
+              <p>Door een tafel te reserveren bent u ervan zeker dat u terecht kunt bij ons. Hierdoor
+                kunnen wij
+                ook
+                inspelen op hoeveel klanten wij verwachten zodat de keuken uw gerecht snel kan bereiden!
+                <br>
+                <br>
+                WIlt u liever even bellen?: <a href="tel:+31615321479">+31615321479</a>.
+                <br>
+                <br>
+              <div id="tekst2">
+                De prijs voor kinderen jonger dan 12 jaar is €2 per levensjaar. Voor volwassenen
+                bedraagt de prijs voor
+                eten doordeweeks €30 per persoon, en in het weekend €38 per persoon. Onze Asian Fusion
+                gerechten kunnen
+                onbeperkt besteld worden, let wel op dat drankjes niet inbegrepen zijn in de prijs.
+              </div>
+              <br>
+              <br>
+              </p>
+              <br>
+              <br>
+            </div>
+            <div class="column">
+              <br>
+              <br>
+              <form method="POST" id="hidden_action_form" action="scripts/reserveren.php">
+                <script>
+                  document.getElementById('hidden_action_form').action = '../scripts/reserveren.php';
+                </script>
+                <label>Uw volledige naam:</label>
+                <br>
+                <input type="text" id="naam" name="naam" required>
+                <br>
+                <br>
+                <label>E-mailadres:</label>
+                <br>
+                <input type="email" name="email" required>
+                <br>
+                <br>
+                <label>Aantal personen:</label>
+                <br>
+                <input type="number" name="Number" required min="1" max="25">
+                <br>
+                <br>
+                <label>Gewenste dag:</label>
+                <br>
+                <input type="date" name="boekdatum" required />
+                <!-- Script zodat klanten alleen vanaf de dag van vandaag kunnen boeken -->
+                <script>
+                  var today = new Date().toISOString().split('T')[0];
+                  document.getElementsByName("boekdatum")[0].setAttribute('min', today);
+                </script>
+                <br>
+                <br>
+                <label>Entree tijd:</label>
+                <br>
+                <select class="tijd" name="Tijd" id="tijd">
+                  <option class="tijd" value="16:30">16:30</option>
+                  <option class="tijd" value="17:00">17:00</option>
+                  <option class="tijd" value="17:30" selected>17:30</option>
+                  <option class="tijd" value="18:00">18:00</option>
+                  <option class="tijd" value="18:30">18:30</option>
+                  <option class="tijd" value="19:00">19:00</option>
+                  <option class="tijd" value="19:30">19:30</option>
+                </select>
+                <br>
+                <br>
+                <input type="submit" id="submitBtn" name="submit" value="Verzenden" />
+                </table>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Breedte Scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Spoor Schaduw */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Hendel */
+::-webkit-scrollbar-thumb {
+    background: #FF8E9E;
+    border-radius: 10px;
+}
+
+/* Hendel wanneer hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #FF8E9E;
+}
+
+body {
+      background-image: url("https://depink.projectsbyaiden.nl/img/pink.jpg");
+}
+
+h2, h1, p {
+  color: #FF597B;
+  font-family: 'Jura';
+}
+
+.mainDiv {
+  text-align: center;;
+  background-color: #ffebfa;
+}
+
+#tweedeDiv {
+  background-color: #ff99ad;
+}
+
+.checked {
+  color: orange;
+}
+
+
+/* Navigation style */
+
+ul {
+    list-style-type: none;
+    margin: fixed;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FF8E9E;
+    color: white;
+    position: fo;
+    width: 100%;
+    height: 50px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    font-family: 'Jura';
+}
+
+
+li a:hover {
+    background-color: white;
+    color: #FF8E9E;
+
+}
+
+/* End navigation style */
+
+/* Navigation eten bestellen - Andere kleur */
+#btnEtenBestellen {
+    background-color: #FF597B;
+}
+
+button {
+    border: none;
+    background-color: #FF597B;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 12px;
+    transition: 0.5s;
+}
+
+button:hover {
+  background-color: white;
+  color: #FF597B;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+    .column {
+      float: left;
+      width: 100%;
+      text-align: center;
+    }
+}
+
+#columnBestellen {
+    padding: 100px 0;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a {
+    color: white;
+  text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    transition-delay: 0.1s;
+}
+
+footer {
+    background-color: #FF8E9E;
+    text-align: center;
+}
+
+.footer-text {
+    color: black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 22px;
+}
+
+.footerH2{
+  color: white;
+}
+
+#whiteLine{
+  background-color: white;
+}
