@@ -176,6 +176,10 @@ footer {
     color: white;
 }
 
+button {
+  background-color: pink;
+}
+
 #hero-button2 {
     background-color: #FF597B;
     color: white;
