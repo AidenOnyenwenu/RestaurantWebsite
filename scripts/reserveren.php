@@ -41,7 +41,7 @@
   <h1>  <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   // Get value
-  $naam = $_POST['naam'];
+  $naam = $_POST['name'];
   if (empty($naam)) {
     echo "Name is empty";
   } else {
@@ -67,24 +67,40 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   <br>
 
-  <?php 
-if(isset($_POST['submit'])){
-    $to = "aidenonyenwenu@gmail.com"; // this is your Email address
-    $from = $_POST['email']; // this is the sender's Email address
-    $first_name = $_POST['naam'];
-    $last_name = $_POST['naam'];
-    $subject = "Form submission";
-    $subject2 = "Copy of your form submission";
-    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
-    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
 
-    $headers = "From:" . $from;
-    $headers2 = "From:" . $to;
-    mail($to,$subject,$message,$headers);
-    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
-    // You can also use header('Location: thank_you.php'); to redirect to another page.
-    // You cannot use header and echo together. It's one or the other.
-    }
+<!-- Database -->
+  
+  <?php
+// Create database connection
+$conn = mysqli_connect("localhost", "projectsofaide_restaurantDatabase", "Aiden348368", "projectsofaide_restaurantDatabase");
+
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+// Insert data into database
+$sql = "INSERT INTO users (name, email, persons, date)
+VALUES ('".$_POST["name"]."', '".$_POST["email"]."', '".$_POST["persons"]."', '".$_POST["date"]."')";
+
+if (mysqli_query($conn, $sql)) {
+    echo "";
+} else {
+    echo "Error inserting data: " . mysqli_error($conn);
+}
+
+// Send email
+$to = $_POST['email'];
+$subject = 'Reservation Confirmation';
+$message = 'Thank you for your reservation!';
+$headers = 'From: restaurantdepink.nl' . "\r\n" .
+    'Reply-To: restaurantdepink.nl' . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+
+mail($to, $subject, $message, $headers);
+
+// Close connection
+mysqli_close($conn);
 ?>
 
 </body>

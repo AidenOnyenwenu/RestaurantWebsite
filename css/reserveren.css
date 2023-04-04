@@ -57,7 +57,7 @@ input:invalid {
   position: absolute;
   top: 53%;
   left: 50%;
-  width: 1000px;
+  width: 1800px;
   height: 450px;
   max-width: fit-content;
   max-height: fit-content;
@@ -70,6 +70,27 @@ input:invalid {
   text-align: center;
   cursor: crosshair;
 }
+
+#tekst1 {
+    grid-column: 1;
+  width: 500px;
+}
+
+#tekst2 {
+    grid-column: 1;
+  visibility: hidden;
+}
+
+/* Desktop pov */
+@media only screen and (min-width: 1268px) {
+    #tekst2 {
+      visibility: visible;
+        grid-column: 1;
+  grid-row: 1;
+      width: 500px;
+    }
+}
+
 
 .hero-image {
     background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.0)), url(/img/reserveren.jpg);
@@ -117,8 +138,6 @@ footer {
   font-size: 10px;
 }
 
-/* Navigation style */
-
 ul {
   list-style-type: none;
   margin: fixed;
@@ -161,24 +180,31 @@ li a:hover {
   width: 50%;
 }
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-#tekst2 {
-  visibility: hidden;
-}
-
-@media only screen and (min-width: 1268px) {
-    #tekst2 {
-      visibility: visible;
-    }
-}
-
 #btnBoekTafel {
     background-color: #FF597B;
 }
+
+#container {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 50px;
+grid-row-gap: 0px;
+  margin-left: 200px;
+  margin-right: 200px;
+  background-color: pink;
+}
+
+form {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+
 
