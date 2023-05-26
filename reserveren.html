@@ -19,6 +19,7 @@
 <body>
   <noscript id="noscript">Your browser does not support JavaScript! Please update your site settings!</noscript>
   <article>
+    <div id="container">
       <div class="hero-image">
         <nav>
           <ul>
@@ -30,32 +31,46 @@
             </li>
           </ul>
         </nav>
-        <div id="container">
+        <div class="row">
+          <div id="reserveren-div">
+            <div class="column">
+              <br>
+              <br>
               <label class="hero-titel">Reserveer een plekje</label>
-     <div id="tekst1">
+              <br>
+              <br>
               <p>Door een tafel te reserveren bent u ervan zeker dat u terecht kunt bij ons. Hierdoor
                 kunnen wij
                 ook
-                inspelen op hoeveel klanten wij verwachten zodat de keuken uw gerecht snel kan bereiden!</p>
-     </div>
-    <p>Wilt u liever even bellen?:</p><a href="tel:+31615321479">+31615321479</a>.
+                inspelen op hoeveel klanten wij verwachten zodat de keuken uw gerecht snel kan bereiden!
                 <br>
                 <br>
-              <div id="tekst2"><p>
-                De prijs voor kinderen jonger dan 12 jaar is €2 per levensjaar. Voor volwassenen
+                WIlt u liever even bellen?: <a href="tel:+31615321479">+31615321479</a>.
+                <br>
+                <br>
+              <div id="tekst2">
+                De prijs voor kinderen jonger dan 12 jaar is в‚¬2 per levensjaar. Voor volwassenen
                 bedraagt de prijs voor
-                eten doordeweeks €30 per persoon, en in het weekend €38 per persoon. Onze Asian Fusion
+                eten doordeweeks в‚¬30 per persoon, en in het weekend в‚¬38 per persoon. Onze Asian Fusion
                 gerechten kunnen
-                onbeperkt besteld worden, let wel op dat drankjes niet inbegrepen zijn in de prijs.</p>
+                onbeperkt besteld worden, let wel op dat drankjes niet inbegrepen zijn in de prijs.
               </div>
-
+              <br>
+              <br>
+              </p>
+              <br>
+              <br>
+            </div>
+            <div class="column">
+              <br>
+              <br>
               <form method="POST" id="hidden_action_form" action="scripts/reserveren.php">
                 <script>
                   document.getElementById('hidden_action_form').action = '../scripts/reserveren.php';
                 </script>
                 <label>Uw volledige naam:</label>
                 <br>
-                <input type="text" id="naam" name="name" required>
+                <input type="text" id="naam" name="naam" required>
                 <br>
                 <br>
                 <label>E-mailadres:</label>
@@ -65,12 +80,12 @@
                 <br>
                 <label>Aantal personen:</label>
                 <br>
-                <input type="number" name="persons" required min="1" max="25">
+                <input type="number" name="Number" required min="1" max="25">
                 <br>
                 <br>
                 <label>Gewenste dag:</label>
                 <br>
-                <input type="date" name="date" required />
+                <input type="date" name="boekdatum" required />
                 <!-- Script zodat klanten alleen vanaf de dag van vandaag kunnen boeken -->
                 <script>
                   var today = new Date().toISOString().split('T')[0];
@@ -94,8 +109,11 @@
                 <input type="submit" id="submitBtn" name="submit" value="Verzenden" />
                 </table>
               </form>
+            </div>
+          </div>
+        </div>
       </div>
-      </div>
+    </div>
   </article>
 </body>
 

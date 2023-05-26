@@ -31,7 +31,7 @@
 
 body {
     background-color: black;
-    background-image: linear-gradient(rgba(5, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("https://depink.projectsbyaiden.nl/img/pink.jpg");
+    background-image: linear-gradient(rgba(5, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("https://projectsofaiden.nl/img/pink.jpg");
 }
 
 h2, h3 {
@@ -331,7 +331,7 @@ img:hover {
   margin-left: 20px;
   max-width: 300px;
 }
-b
+
 .callout-header {
   padding: 25px 15px;
   background: #FF597B;
