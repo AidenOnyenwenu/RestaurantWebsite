@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Breedte Scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Spoor Schaduw */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Hendel */
+::-webkit-scrollbar-thumb {
+    background: #FF8E9E;
+    border-radius: 10px;
+}
+
+/* Hendel wanneer hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #FF8E9E;
+}
+
+body {
+    background-color: black;
+    background-image: linear-gradient(rgba(5, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("https://projectsofaiden.nl/img/pink.jpg");
+}
+
+p, h1 {
+  color: white;
+  font-family: 'Jura';
+  text-align: center;
+}
+
+#noscript {
+    color: red;
+    font-family: 'Luckiest Guy';
+    font-size: 22px;
+}
