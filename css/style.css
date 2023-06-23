@@ -235,8 +235,8 @@ button {
 /* Einde menu knop */
 
 
-/* Navigation boek tafel - Andere kleur */
-#btnBoekTafel {
+/* Active page - Andere kleur */
+#active {
     background-color: #FF597B;
 }
 
