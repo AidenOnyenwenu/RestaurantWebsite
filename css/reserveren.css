@@ -28,6 +28,12 @@ body {
 a {
   color: white
 }
+
+/* Active page - Andere kleur */
+#active {
+    background-color: #FF597B;
+}
+
 a:hover {
   color: #FF597B;
 }
