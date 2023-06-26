@@ -9,31 +9,10 @@
     p {
       font-family: 'Jura';
       color: white;
-      font-size: 40px;
+      font-size: 30px;
       text-align: center;
     }
 
-    #homeBtnContainer {
-      display: flex;
-      justify-content: center;
-      margin-top: 20px;
-    }
-
-    #homeBtn {
-      border: none;
-      background-color: #FF8E9E;
-      color: white;
-      padding: 15px 32px;
-      text-decoration: none;
-      font-size: 15px;
-      border-radius: 12px;
-      font-family: 'Jura';
-      margin-left: 50px;
-    }
-
-    #homeBtn:hover {
-      background-color: white;
-      color: #FF8E9E;
-      margin: 10px 10px;
-      transition: 1s;
-    }
+a {
+  color: pink;
+}
