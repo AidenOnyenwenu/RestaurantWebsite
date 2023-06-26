@@ -67,20 +67,26 @@
               <form method="POST" id="hidden_action_form" action="scripts/reserveren.php">
                 <script>
                   document.getElementById('hidden_action_form').action = '../scripts/reserveren.php';
+
+                    function checkMaxPersons(input) {
+    if (input.value >= 25) {
+      alert("Het maximum aantal personen is behaald. Als u voor meer dan 25 personen wilt reserveren, bel dan even.");
+    }
+  }
                 </script>
                 <label>Uw volledige naam:</label>
                 <br>
-                <input type="text" id="naam" name="naam" placeholder="Naam" required>
+                <input type="text" id="naam" name="naam" required>
                 <br>
                 <br>
                 <label>E-mailadres:</label>
                 <br>
-                <input type="email" name="email" placeholder="Email" required>
+                <input type="email" name="email" required>
                 <br>
                 <br>
                 <label>Aantal personen:</label>
                 <br>
-                <input type="number" name="Number" placeholder="2" required min="1" max="25">
+                <input type="number" name="Number" placeholder="2" required min="1" max="25" onchange="checkMaxPersons(this)">
                 <br>
                 <br>
                 <label>Gewenste dag:</label>
