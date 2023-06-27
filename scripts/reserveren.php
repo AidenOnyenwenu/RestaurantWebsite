@@ -72,7 +72,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   
   <?php
 // Create database connection
-$conn = mysqli_connect("localhost", "projectsofaide_restaurantDatabase", "Aiden348368", "projectsofaide_restaurantDatabase");
+$conn = mysqli_connect("localhost", "username", "password", "databasename");
 
 // Check connection
 if (!$conn) {
