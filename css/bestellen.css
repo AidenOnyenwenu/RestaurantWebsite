@@ -79,6 +79,7 @@ li a {
 li a:hover {
     background-color: white;
     color: #FF8E9E;
+    transition: 1s;
 
 }
 

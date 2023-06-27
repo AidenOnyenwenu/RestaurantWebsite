@@ -36,6 +36,7 @@ a {
 
 a:hover {
   color: #FF597B;
+  transition: 1s;
 }
 input:valid {
   width: 60%;
@@ -154,6 +155,7 @@ li a {
 li a:hover {
   background-color: white;
   color: #FF8E9E;
+  transition: 1s;
   
 }
 

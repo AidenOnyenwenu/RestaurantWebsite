@@ -81,6 +81,7 @@ li a {
 li a:hover {
     background-color: white;
     color: #FF8E9E;
+    transition: 1s;
 
 }
 
@@ -98,7 +99,7 @@ a {
 
 a:hover {
     color: white;
-    transition-delay: 0.1s;
+    transition: 1s;
     text-decoration: none;
 }
 
