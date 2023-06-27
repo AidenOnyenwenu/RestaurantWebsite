@@ -8,4 +8,4 @@ Open the "reserveren.php" file. And edit the database connectie line with your d
 
 Place the file in the "htdocs" folder of your XAMPP installation directory. This is the location where XAMPP serves your web files. 
 
-It now should work with database interactions.s
+It now should work with database interactions.
