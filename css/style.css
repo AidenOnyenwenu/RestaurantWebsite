@@ -344,6 +344,8 @@ img:hover {
             padding: 10px;
             margin: 10px;
             max-width: 200px;
+          max-height: 150px;
+          background-color: #ffd1d8;
         }
 
         .reviewer-image {
@@ -363,7 +365,7 @@ img:hover {
         .reviewer-name {
             font-weight: bold;
             text-align: center;
-            margin: 0 0 5px;
+          margin-bottom: 5px;
         }
 
         .star-rating {
