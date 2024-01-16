@@ -138,3 +138,51 @@ footer {
 #whiteLine{
   background-color: white;
 }
+
+.callout {
+  position: fixed;
+  bottom: 35px;
+  right: 20px;
+  margin-left: 20px;
+  max-width: 300px;
+}
+
+.callout-header {
+  padding: 25px 15px;
+  background: #FF597B;
+  font-size: 30px;
+  color: white;
+  font-family: 'Jura';
+}
+
+/* Callout container/body */
+.callout-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  padding: 25px;
+  background-color: #734e68;
+  color: black;
+  font-family: 'Jura';
+  text-align: center;
+}
+
+.call-column-one {
+  grid-column: 1;
+}
+
+.call-column-two {
+  grid-column: 2;
+}
+
+/* Sluit button */
+.closebtn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
