@@ -1,7 +1,5 @@
 # Restaurant De Pink
 
-<img src="https://onlineimages.aidenonyenwenu.repl.co/images/Schermafbeelding%202023-10-15%20205622.png">
-
 ![GitHub Repo stars](https://img.shields.io/github/stars/AidenistooOP/RestaurantWebsite?color=green) ![GitHub](https://img.shields.io/github/license/AidenistooOP/RestaurantWebsite) ![](https://komarev.com/ghpvc/?username=aidenistooop&label=PROFILE+VIEWS)
 
 ## 📂 License
