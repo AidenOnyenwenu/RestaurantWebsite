@@ -1,6 +1,6 @@
 # Restaurant De Pink
 
-![GitHub Repo stars](https://img.shields.io/github/stars/AidenistooOP/RestaurantWebsite?color=green) ![GitHub](https://img.shields.io/github/license/AidenistooOP/RestaurantWebsite) ![](https://komarev.com/ghpvc/?username=aidenistooop&label=PROFILE+VIEWS)
+![GitHub Repo stars](https://img.shields.io/github/stars/AidenistooOP/RestaurantWebsite?color=green) ![GitHub](https://img.shields.io/github/license/AidenistooOP/RestaurantWebsite)
 
 ## 📂 License
 
